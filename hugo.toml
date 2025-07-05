@@ -1,14 +1,11 @@
 baseURL = "https://artisanml.github.io/"
-author = "ARTISAN ML"
+author = "Ilias Antonopoulos"
 copyright = "Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - "
 relativeURLs = true
 languageCode = "en-us"
-
-[pagination]
-  pagerSize = 3
-
 title = "ARTISAN ML"
 theme = "PaperMod"
+paginate = 3
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 enableRobotsTXT = true
@@ -16,12 +13,13 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 enableEmoji = true
+googleAnalytics = "G-K5FF1NBVCL"
 
 [params]
 defaultTheme = "auto"
 env = "production"
 description = "Welcome to ARTISAN ML."
-author = "ARTISAN ML"
+author = "Ilias Antonopoulos"
 ShowShareButtons = true
 ShowReadingTime = true
 displayFullLangName = true
@@ -70,6 +68,22 @@ ShowToc = true
     name = "home"
     url = "/"
     weight = 1
+  [[menu.main]]
+    identifier = "projects"
+    name = "projects"
+    url = "/projects"
+    weight = 3
+  [[menu.main]]
+    identifier = "cv"
+    name = "cv"
+    url = "/cv"
+    weight = 4
+
+  [[menu.main]]
+  identifier = "search"
+  name = "search"
+  url = "/search"
+  weight = 5
 
 [taxonomies]
 category = "categories"
@@ -82,7 +96,7 @@ series = "series"
     disabled = false
     simple = true
 
-  [privacy.x]
+  [privacy.twitter]
     disabled = false
     enableDNT = true
     simple = true
@@ -100,11 +114,8 @@ series = "series"
   [services.instagram]
     disableInlineCSS = true
 
-  [services.x]
+  [services.twitter]
     disableInlineCSS = true
-
-  [services.googleAnalytics]
-    id = "G-K5FF1NBVCL"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
