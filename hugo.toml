@@ -1,0 +1,126 @@
+baseURL = "https://artisanml.github.io/"
+author = "Ilias Antonopoulos"
+copyright = "Copyright © 2025, Ilias Antonopoulos - "
+relativeURLs = true
+languageCode = "en-us"
+title = "Ilias Antonopoulos"
+theme = "PaperMod"
+paginate = 3
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+googleAnalytics = "G-K5FF1NBVCL"
+
+[params]
+defaultTheme = "auto"
+env = "production"
+description = "Welcome to my space."
+author = "Ilias Antonopoulos"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+
+  [params.profileMode]
+  enabled = true
+  title = "Hi there 👋"
+  subtitle = "Welcome to my space."
+  imageUrl = "/me.png"
+  imageTitle = "me"
+  imageWidth = 160
+  imageHeight = 160
+    [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ilias-ant"
+
+    [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/ilias-ant"
+  
+  [params.assets]
+  favicon = "/favicons/favicon.ico"
+  favicon16x16 = "/favicons/favicon-16x16.png"
+  favicon32x32 = "/favicons/favicon-32x32.png"
+  apple_touch_icon = "/favicons/apple-touch-icon.png"
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "/blog"
+    weight = 2
+  [[menu.main]]
+    identifier = "projects"
+    name = "projects"
+    url = "/projects"
+    weight = 3
+  [[menu.main]]
+    identifier = "cv"
+    name = "cv"
+    url = "/cv"
+    weight = 4
+
+  [[menu.main]]
+  identifier = "search"
+  name = "search"
+  url = "/search"
+  weight = 5
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
