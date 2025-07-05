@@ -1,5 +1,5 @@
 baseURL = "https://artisanml.github.io/"
-author = "Ilias Antonopoulos"
+author = "ARTISAN ML"
 copyright = "Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - "
 relativeURLs = true
 languageCode = "en-us"
@@ -21,7 +21,7 @@ enableEmoji = true
 defaultTheme = "auto"
 env = "production"
 description = "Welcome to ARTISAN ML."
-author = "Ilias Antonopoulos"
+author = "ARTISAN ML"
 ShowShareButtons = true
 ShowReadingTime = true
 displayFullLangName = true
