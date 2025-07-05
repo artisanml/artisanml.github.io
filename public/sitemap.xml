@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ilias-ant.github.io/blog/</loc>
+    <loc>https://artisanml.github.io/</loc>
   </url><url>
-    <loc>https://ilias-ant.github.io/cv/</loc>
+    <loc>https://artisanml.github.io/blog/</loc>
   </url><url>
-    <loc>https://ilias-ant.github.io/home/</loc>
+    <loc>https://artisanml.github.io/cv/</loc>
   </url><url>
-    <loc>https://ilias-ant.github.io/categories/</loc>
+    <loc>https://artisanml.github.io/home/</loc>
   </url><url>
-    <loc>https://ilias-ant.github.io/</loc>
+    <loc>https://artisanml.github.io/projects/</loc>
   </url><url>
-    <loc>https://ilias-ant.github.io/series/</loc>
+    <loc>https://artisanml.github.io/search/</loc>
   </url><url>
-    <loc>https://ilias-ant.github.io/tags/</loc>
+    <loc>https://artisanml.github.io/categories/</loc>
+  </url><url>
+    <loc>https://artisanml.github.io/series/</loc>
+  </url><url>
+    <loc>https://artisanml.github.io/tags/</loc>
   </url>
 </urlset>
