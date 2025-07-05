@@ -1,9 +1,9 @@
 baseURL = "https://artisanml.github.io/"
 author = "Ilias Antonopoulos"
-copyright = "Copyright © 2025, Ilias Antonopoulos - "
+copyright = "Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - "
 relativeURLs = true
 languageCode = "en-us"
-title = "Ilias Antonopoulos"
+title = "ARTISAN ML"
 theme = "PaperMod"
 paginate = 3
 DefaultContentLanguage = "en"
@@ -18,7 +18,7 @@ googleAnalytics = "G-K5FF1NBVCL"
 [params]
 defaultTheme = "auto"
 env = "production"
-description = "Welcome to my space."
+description = "Welcome to ARTISAN ML."
 author = "Ilias Antonopoulos"
 ShowShareButtons = true
 ShowReadingTime = true
@@ -32,7 +32,7 @@ ShowToc = true
   [params.profileMode]
   enabled = true
   title = "Hi there 👋"
-  subtitle = "Welcome to my space."
+  subtitle = "Welcome to the space of ARTISAN ML."
   imageUrl = "/me.png"
   imageTitle = "me"
   imageWidth = 160
