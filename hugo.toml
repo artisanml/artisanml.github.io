@@ -13,7 +13,7 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 enableEmoji = true
-googleAnalytics = "G-K5FF1NBVCL"
+googleAnalytics = ""
 
 [params]
 defaultTheme = "auto"
@@ -68,11 +68,6 @@ ShowToc = true
     name = "home"
     url = "/"
     weight = 1
-  [[menu.main]]
-    identifier = "blog"
-    name = "blog"
-    url = "/blog"
-    weight = 2
   [[menu.main]]
     identifier = "projects"
     name = "projects"
