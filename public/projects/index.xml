@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ARTISAN ML</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content on ARTISAN ML</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>adversarial-validation</title>
+      <link>http://localhost:1313/projects/open-source/adversarial-validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/open-source/adversarial-validation/</guid>
+      <description>&lt;p&gt;A tiny framework to perform adversarial validation of your training and test data. Published as a Python package.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;repository: &lt;a href=&#34;https://github.com/ilias-ant/adversarial-validation&#34;&gt;https://github.com/ilias-ant/adversarial-validation&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>pydatagovgr</title>
+      <link>http://localhost:1313/projects/open-source/pydatagovgr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/open-source/pydatagovgr/</guid>
+      <description>&lt;p&gt;A Pythonic client for the official data.gov.gr API. Published as a Python package.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;repository: &lt;a href=&#34;https://github.com/ilias-ant/pydatagovgr&#34;&gt;https://github.com/ilias-ant/pydatagovgr&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>tf-notify</title>
+      <link>http://localhost:1313/projects/open-source/tf-notify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/open-source/tf-notify/</guid>
+      <description>&lt;p&gt;Want to get notified on the progress of your TensorFlow model training? This is a collection of robust &lt;code&gt;tf.keras&lt;/code&gt;
+callbacks to send notifications to a messaging app of your choice. Published as a Python package.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;repository: &lt;a href=&#34;https://github.com/ilias-ant/tf-notify&#34;&gt;https://github.com/ilias-ant/tf-notify&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>american-alpine-club-articles</title>
+      <link>http://localhost:1313/projects/open-source/american-alpine-club-articles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/open-source/american-alpine-club-articles/</guid>
+      <description>&lt;p&gt;An app that scrapes public articles from the American Alpine Club&amp;rsquo;s publications: AAJ and ANAC.&lt;/p&gt;
+&lt;p&gt;This work has been published as a &lt;a href=&#34;https://www.kaggle.com/datasets/iantonopoulos/american-alpine-club-articles&#34;&gt;Kaggle dataset&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;repository: &lt;a href=&#34;https://github.com/ilias-ant/american-alpine-club-articles&#34;&gt;https://github.com/ilias-ant/american-alpine-club-articles&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>pyclimb</title>
+      <link>http://localhost:1313/projects/open-source/pyclimb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/open-source/pyclimb/</guid>
+      <description>&lt;p&gt;A library to easily convert rock climbing route grades between different grading systems. Published as a Python package.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;repository: &lt;a href=&#34;https://github.com/ilias-ant/pyclimb&#34;&gt;https://github.com/ilias-ant/pyclimb&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

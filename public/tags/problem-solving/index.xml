@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Problem-Solving on ARTISAN ML</title>
+    <link>http://localhost:1313/tags/problem-solving/</link>
+    <description>Recent content in Problem-Solving on ARTISAN ML</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright>
+    <lastBuildDate>Wed, 31 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/problem-solving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do we even need ML?</title>
+      <link>http://localhost:1313/blog/do-we-even-need-ml/</link>
+      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/do-we-even-need-ml/</guid>
+      <description>&lt;p&gt;Having worked in the industry for 6 years now, I&amp;rsquo;ve seen machine learning projects succeed but, most
+importantly, I&amp;rsquo;ve seen many more fail - I even failed some of them myself due to inexperience and/or poor judgement.
+Although each failure has its own story, reasons and learnings, some common denominators always exist.&lt;/p&gt;
+&lt;p&gt;One such important denominator can be &amp;ldquo;boiled down&amp;rdquo; to a single assertion that - as an ML engineer - I am particularly
+fond of:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

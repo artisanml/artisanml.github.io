@@ -5,7 +5,9 @@ relativeURLs = true
 languageCode = "en-us"
 title = "ARTISAN ML"
 theme = "PaperMod"
-paginate = 3
+
+[pagination]
+  pagerSize = 3
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 enableRobotsTXT = true
@@ -60,6 +62,9 @@ ShowToc = true
   minMatchCharLength = 0
   keys = [ "title", "permalink", "summary", "content" ]
 
+[params.Social]
+  github = "https://github.com/ilias-ant"
+  linkedin = "https://www.linkedin.com/in/ilias-ant"
 
 [menu]
 
