@@ -1,6 +1,6 @@
 baseURL = "https://artisanml.github.io/"
-author = "Ilias Antonopoulos"
-copyright = "Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - "
+author = "ARTISAN ML"
+copyright = "Copyright © 2025, ARTISAN ML P.C. - All rights reserved."
 relativeURLs = true
 languageCode = "en-us"
 title = "ARTISAN ML"
@@ -21,7 +21,7 @@ googleAnalytics = "G-PHHSLK594Z"
 defaultTheme = "auto"
 env = "production"
 description = "Welcome to ARTISAN ML."
-author = "Ilias Antonopoulos"
+author = "ARTISAN ML"
 ShowShareButtons = true
 ShowReadingTime = true
 displayFullLangName = true
@@ -33,20 +33,13 @@ ShowToc = true
 
   [params.profileMode]
   enabled = true
-  title = "Hi there 👋"
+  title = "..."
   subtitle = "Welcome to the space of ARTISAN ML."
-  imageUrl = "/me.png"
-  imageTitle = "me"
-  imageWidth = 160
-  imageHeight = 160
-    [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/ilias-ant"
+  imageUrl = "/artisan-ml-logo.png"
+  imageTitle = "artisan-ml-logo"
+  imageWidth = 320
+  imageHeight = 320
 
-    [[params.socialIcons]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/ilias-ant"
-  
   [params.assets]
   favicon = "/favicons/favicon.ico"
   favicon16x16 = "/favicons/favicon-16x16.png"
