@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ARTISAN ML</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/products/</link>
     <description>Recent content on ARTISAN ML</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright><atom:link href="http://localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smartfin</title>
       <link>http://localhost:1313/products/smartfin/</link>
@@ -17,7 +17,6 @@
 &lt;p&gt;&lt;strong&gt;Smartfin&lt;/strong&gt; was created by a team of investors and data scientists who recognized that without a finance PhD or endless hours to research stocks, finding great investments can be challenging.&lt;/p&gt;
 &lt;p&gt;Frustrated by the lack of a platform that makes stock research fast, easy, and smart, they decided to build a comprehensive solution. The platform offers real-time alerts, interactive watchlists, company updates, and human-friendly insights all in one place, empowering everyday investors to make informed decisions.&lt;/p&gt;</description>
     </item>
-    
     
   </channel>
 </rss>

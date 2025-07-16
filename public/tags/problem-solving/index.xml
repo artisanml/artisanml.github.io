@@ -6,20 +6,6 @@
     <description>Recent content in Problem-Solving on ARTISAN ML</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright>
-    <lastBuildDate>Wed, 31 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/problem-solving/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Do we even need ML?</title>
-      <link>http://localhost:1313/blog/do-we-even-need-ml/</link>
-      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blog/do-we-even-need-ml/</guid>
-      <description>&lt;p&gt;Having worked in the industry for 6 years now, I&amp;rsquo;ve seen machine learning projects succeed but, most
-importantly, I&amp;rsquo;ve seen many more fail - I even failed some of them myself due to inexperience and/or poor judgement.
-Although each failure has its own story, reasons and learnings, some common denominators always exist.&lt;/p&gt;
-&lt;p&gt;One such important denominator can be &amp;ldquo;boiled down&amp;rdquo; to a single assertion that - as an ML engineer - I am particularly
-fond of:&lt;/p&gt;</description>
-    </item>
-    
+    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright><atom:link href="http://localhost:1313/tags/problem-solving/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

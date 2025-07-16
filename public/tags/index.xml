@@ -6,43 +6,6 @@
     <description>Recent content in Tags on ARTISAN ML</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright>
-    <lastBuildDate>Wed, 31 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Machine-Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
-      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Problem-Solving</title>
-      <link>http://localhost:1313/tags/problem-solving/</link>
-      <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/problem-solving/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adversarial-Validation</title>
-      <link>http://localhost:1313/tags/adversarial-validation/</link>
-      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/adversarial-validation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data-Drift</title>
-      <link>http://localhost:1313/tags/data-drift/</link>
-      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/data-drift/</guid>
-      <description></description>
-    </item>
-    
+    <copyright>Copyright © 2025, ARTISAN ML SINGLE MEMBER P.C. - </copyright><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
