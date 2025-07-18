@@ -3,7 +3,7 @@ author = "ARTISAN ML"
 copyright = "Copyright © 2025, ARTISAN ML P.C. - All rights reserved."
 relativeURLs = true
 languageCode = "en-us"
-title = "ARTISAN ML"
+title = ""
 theme = "PaperMod"
 
 [pagination]
@@ -33,7 +33,7 @@ ShowToc = true
 
   [params.profileMode]
   enabled = true
-  title = "..."
+  title = ""
   subtitle = "Welcome to the space of ARTISAN ML."
   imageUrl = "/artisan-ml-logo.png"
   imageTitle = "artisan-ml-logo"
