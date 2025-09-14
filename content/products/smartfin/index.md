@@ -13,7 +13,7 @@ track high-potential public companies — faster and more enjoyably*
 
 <!--more-->
 
- >   *[https://smartf.in/](https://smartf.in/)*
+ >   *[https://thesmartfin.com/](https://thesmartfin.com/)*
 
 ### What is Smartfin?
 
@@ -77,4 +77,4 @@ Using Smartfin, you can:
 
 ### Pricing
 
-To learn more about Smartfin's pricing, head over to: *[https://smartf.in/pricing](https://smartf.in/pricing)*
+To learn more about Smartfin's pricing, head over to: *[https://thesmartfin.com/pricing](https://thesmartfin.com/pricing)*
