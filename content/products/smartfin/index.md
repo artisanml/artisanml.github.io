@@ -1,6 +1,6 @@
 ---
 title: "Smartfin"
-draft: false
+draft: true
 weight: 5
 hidemeta : true
 summary: 
