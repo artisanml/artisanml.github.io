@@ -54,6 +54,11 @@ ShowToc = true
   minMatchCharLength = 0
   keys = [ "title", "permalink", "summary", "content" ]
 
+  [params.substack]
+  url = "https://artisanml.substack.com"
+  # Post slugs (the part after /p/) to leave off the blog page
+  exclude = [ "coming-soon" ]
+
 [params.Social]
   github = "https://github.com/ilias-ant"
   linkedin = "https://www.linkedin.com/in/ilias-ant"
@@ -66,11 +71,15 @@ ShowToc = true
     url = "/"
     weight = 1
 
-  # [[menu.main]]
-  #   identifier = "products"
-  #   name = "products"
-  #   url = "/products"
-  #   weight = 2
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "/blog"
+    weight = 2
+
+# Re-fetch remote resources (e.g. the Substack feed) at most every 15 minutes locally
+[caches.getresource]
+  maxAge = "15m"
 
 [taxonomies]
 category = "categories"
