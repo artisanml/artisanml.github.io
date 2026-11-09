@@ -1,30 +1,5 @@
-{{- /*
-  Lists posts from the Substack RSS feed at build time. Substack is the source
-  of truth; nothing is copied into this repo. Configure under [params.substack].
-*/ -}}
+{{- /* Lists the Substack posts declared in content/blog/_index.md front matter. */ -}}
 {{- define "main" }}
-{{- $cfg := site.Params.substack }}
-{{- $exclude := $cfg.exclude | default slice }}
-{{- $feedURL := printf "%s/feed" $cfg.url }}
-
-{{- $items := slice }}
-{{- with try (resources.GetRemote $feedURL) }}
-  {{- with .Err }}
-    {{- errorf "substack: failed to fetch %s: %s" $feedURL . }}
-  {{- else with .Value }}
-    {{- $data := . | transform.Unmarshal }}
-    {{- $raw := $data.channel.item }}
-    {{- if reflect.IsMap $raw }}{{ $raw = slice $raw }}{{ end }}
-    {{- range $raw }}
-      {{- if not (in $exclude (path.Base .link)) }}
-        {{- $items = $items | append . }}
-      {{- end }}
-    {{- end }}
-  {{- else }}
-    {{- errorf "substack: empty response from %s" $feedURL }}
-  {{- end }}
-{{- end }}
-
 <header class="page-header">
   <h1>{{ .Title }}</h1>
   {{- with .Description }}
@@ -32,56 +7,20 @@
   {{- end }}
 </header>
 
-{{- range $items }}
-{{- $date := time.AsTime .pubDate }}
-<article class="substack-post">
-  <div class="substack-embed" data-post-url="{{ .link }}">
-    {{- /* Fallback shown until (or if) the Substack embed loads */}}
-    <h2 class="substack-post-title"><a href="{{ .link }}">{{ .title }}</a></h2>
-    {{- with .description }}<p>{{ . }}</p>{{ end }}
-    <p class="substack-post-meta">
-      <time datetime="{{ $date.Format "2006-01-02" }}">{{ $date | time.Format ":date_long" }}</time>
-      · <a href="{{ .link }}">Read on Substack →</a>
-    </p>
+{{- range .Params.posts }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>{{ .title }}</h2>
+  </header>
+  {{- with .subtitle }}
+  <div class="entry-content">
+    <p>{{ . }}</p>
   </div>
+  {{- end }}
+  <footer class="entry-footer">Read on Substack ↗</footer>
+  <a class="entry-link" aria-label="{{ .title }} (on Substack)" href="{{ .url }}"></a>
 </article>
 {{- else }}
 <p>No posts yet.</p>
 {{- end }}
-
-<section class="substack-subscribe">
-  <iframe src="{{ $cfg.url }}/embed" title="Subscribe to The Artisan ML Substack" loading="lazy" scrolling="no"></iframe>
-</section>
-
-<script>
-  // Turns each .substack-embed into Substack's post embed iframe.
-  // Mirrors substack.com/embedjs/embed.js, which reuses a global regex and
-  // breaks every other embed when a page has more than one.
-  (function () {
-    document.querySelectorAll('.substack-embed[data-post-url]').forEach(function (el) {
-      var post = new URL(el.dataset.postUrl);
-      var slug = post.pathname.replace(/^\/p\//, '');
-      var src = new URL(post.origin + '/embed/p/' + slug);
-      src.searchParams.append('origin', window.location.origin);
-      src.searchParams.append('fullURL', window.location.href);
-
-      var iframe = document.createElement('iframe');
-      iframe.src = src.toString();
-      iframe.title = el.querySelector('.substack-post-title').textContent;
-      iframe.scrolling = 'no';
-      iframe.loading = 'lazy';
-      iframe.sandbox = 'allow-scripts allow-same-origin allow-top-navigation allow-popups';
-      iframe.height = '470';
-
-      window.addEventListener('message', function (e) {
-        if (e.origin === post.origin && e.source === iframe.contentWindow && e.data && e.data.iframeHeight) {
-          iframe.height = e.data.iframeHeight;
-        }
-      });
-
-      el.replaceChildren(iframe);
-      el.classList.add('is-embedded');
-    });
-  })();
-</script>
 {{- end }}
