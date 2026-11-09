@@ -1,0 +1,12 @@
+/*
+ * site.Title is set for browser tabs and link previews, but the logo already
+ * shows the name, so hide the theme's text logo in the header and the
+ * heading under the profile image on the home page.
+ */
+.header .logo > a {
+    display: none;
+}
+
+.profile .profile_inner h1 {
+    display: none;
+}
