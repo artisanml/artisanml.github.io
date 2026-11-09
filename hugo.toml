@@ -1,8 +1,8 @@
 baseURL = "https://artisanml.github.io/"
 author = "ARTISAN ML"
-copyright = "Copyright © 2025, ARTISAN ML P.C. - All rights reserved."
+copyright = "Copyright © 2026, ARTISAN ML P.C. - All rights reserved."
 relativeURLs = true
-languageCode = "en-us"
+locale = "en-US"
 title = ""
 theme = "PaperMod"
 
@@ -15,7 +15,6 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 enableEmoji = true
-googleAnalytics = "G-PHHSLK594Z"
 
 [params]
 defaultTheme = "auto"
@@ -98,6 +97,9 @@ series = "series"
     privacyEnhanced = true
 
 [services]
+
+  [services.googleAnalytics]
+    id = "G-PHHSLK594Z"
 
   [services.instagram]
     disableInlineCSS = true
