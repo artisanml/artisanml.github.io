@@ -6,6 +6,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+  # Rebuild daily so new Substack posts show up on /blog without a push
+  schedule:
+    - cron: "0 6 * * *"
 
 permissions:
   contents: read
