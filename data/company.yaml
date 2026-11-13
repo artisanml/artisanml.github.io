@@ -1,0 +1,32 @@
+# Company details required by Ν.4072/2012, άρθρο 47 §1–2 (corporate transparency).
+# Only the legally required fields are published. Source: ΓΕΜΗ record 182902854000.
+# Keep this in sync with ΓΕΜΗ whenever partners, management, capital or seat change.
+
+nameEl: "ARTISAN ML ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε."
+nameEn: "ARTISAN ML MONOPROSOPI I.K.E."
+gemi: "182902854000"
+
+seat:
+  el: "Δήμος Μακρακώμης, Π.Ε. Φθιώτιδας"
+  en: "Municipality of Makrakomi, Fthiotida"
+address:
+  el: "Οικισμός Βιτόλη Τμήμα Α, 35017 Βιτόλη Φθιώτιδας"
+  en: "Oikismos Vitoli Tmima A, 35017 Vitoli, Fthiotida, Greece"
+
+inLiquidation: false
+
+capital: 500        # εταιρικό κεφάλαιο, €
+guarantee: 0        # συνολικό ποσό εγγυητικών εισφορών (άρθρο 79), €
+
+partners:
+  - nameEl: "Ηλίας Αντωνόπουλος του Γεωργίου"
+    nameEn: "Ilias Antonopoulos"
+    # Same as the company's registered address (per the articles of association)
+    address: "Οικισμός Βιτόλη Τμήμα Α, 35017 Βιτόλη Φθιώτιδας"
+    addressEn: "Oikismos Vitoli Tmima A, 35017 Vitoli, Fthiotida, Greece"
+    contributionEl: "Κεφαλαιακές εισφορές"
+    contributionEn: "Capital contributions"
+
+managers:
+  - nameEl: "Ηλίας Αντωνόπουλος του Γεωργίου"
+    nameEn: "Ilias Antonopoulos"

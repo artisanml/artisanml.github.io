@@ -1,0 +1,57 @@
+{{- /* Corporate transparency page (ν. 4072/2012, άρθρο 47 §1–2). Data: data/company.yaml */ -}}
+{{- define "main" }}
+{{- $c := hugo.Data.company }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  <div class="post-description">
+    Σύμφωνα με το άρθρο 47 του ν. 4072/2012.
+    <span lang="en">Published under Article 47 of Greek Law 4072/2012.</span>
+  </div>
+</header>
+
+<div class="post-content company">
+  <h2>Εταιρεία <span lang="en">· Company</span></h2>
+  <table>
+    <tbody>
+      <tr><th scope="row">Επωνυμία <span lang="en">Legal name</span></th>
+          <td>{{ $c.nameEl }}<br><span lang="en">{{ $c.nameEn }}</span></td></tr>
+      <tr><th scope="row">Αριθμός Γ.Ε.ΜΗ. <span lang="en">GEMI number</span></th>
+          <td>{{ $c.gemi }}</td></tr>
+      <tr><th scope="row">Έδρα <span lang="en">Registered seat</span></th>
+          <td>{{ $c.seat.el }}<br><span lang="en">{{ $c.seat.en }}</span></td></tr>
+      <tr><th scope="row">Διεύθυνση <span lang="en">Address</span></th>
+          <td>{{ $c.address.el }}<br><span lang="en">{{ $c.address.en }}</span></td></tr>
+      <tr><th scope="row">Εταιρικό κεφάλαιο <span lang="en">Share capital</span></th>
+          <td>{{ $c.capital }} €</td></tr>
+      <tr><th scope="row">Εγγυητικές εισφορές <span lang="en">Guarantee contributions</span></th>
+          <td>{{ $c.guarantee }} €</td></tr>
+      <tr><th scope="row">Υπό εκκαθάριση <span lang="en">In liquidation</span></th>
+          <td>{{ if $c.inLiquidation }}Ναι<br><span lang="en">Yes</span>{{ else }}Όχι<br><span lang="en">No</span>{{ end }}</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Εταίροι <span lang="en">· Partners</span></h2>
+  {{- range $c.partners }}
+  <table>
+    <tbody>
+      <tr><th scope="row">Ονοματεπώνυμο <span lang="en">Name</span></th>
+          <td>{{ .nameEl }}<br><span lang="en">{{ .nameEn }}</span></td></tr>
+      <tr><th scope="row">Διεύθυνση <span lang="en">Address</span></th>
+          <td>{{ .address }}{{ with .addressEn }}<br><span lang="en">{{ . }}</span>{{ end }}</td></tr>
+      <tr><th scope="row">Κατηγορία εισφορών <span lang="en">Contribution category</span></th>
+          <td>{{ .contributionEl }}<br><span lang="en">{{ .contributionEn }}</span></td></tr>
+    </tbody>
+  </table>
+  {{- end }}
+
+  <h2>Διαχείριση <span lang="en">· Management</span></h2>
+  <table>
+    <tbody>
+      {{- range $c.managers }}
+      <tr><th scope="row">Διαχειριστής <span lang="en">Manager</span></th>
+          <td>{{ .nameEl }}<br><span lang="en">{{ .nameEn }}</span></td></tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>
+{{- end }}

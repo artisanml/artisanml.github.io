@@ -54,6 +54,10 @@ ShowToc = true
   minMatchCharLength = 0
   keys = [ "title", "permalink", "summary", "content" ]
 
+  [params.footer]
+  # Keep the ΓΕΜΗ number in sync with data/company.yaml
+  text = "Αριθμός Γ.Ε.ΜΗ.: 182902854000 · [Εταιρικά στοιχεία](/etairika-stoixeia/)"
+
 [params.Social]
   github = "https://github.com/ilias-ant"
   linkedin = "https://www.linkedin.com/in/ilias-ant"
