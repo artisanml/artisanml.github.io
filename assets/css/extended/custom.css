@@ -44,3 +44,37 @@
 .company td br + span[lang="en"] {
     display: inline;
 }
+
+/*
+ * The theme sizes pages with a fixed --footer-height (one line of text). Our
+ * footer wraps to two or three lines, which pushed it below the fold on the
+ * home page. Lay the page out as a column instead, so the footer takes the
+ * height it needs and the main area (and the home profile) fills the rest.
+ */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+body > .header,
+body > .main,
+body > .footer {
+    width: 100%;
+}
+
+body > .main {
+    flex: 1 0 auto;
+    min-height: 0;
+}
+
+.main:has(> .profile) {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .profile {
+    flex: 1 0 auto;
+    min-height: 0;
+}
