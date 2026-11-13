@@ -43,11 +43,9 @@ jobs:
           sudo dpkg -i "${{ runner.temp }}/hugo.deb"
           hugo version
       - name: Build with Hugo
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        # baseURL comes from hugo.toml (https://artisanml.io/). Pages reports
+        # http:// for the custom domain, so don't pass its base_url here.
+        run: hugo --gc --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
