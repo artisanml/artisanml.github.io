@@ -7,10 +7,8 @@ on:
       - main
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# No default token permissions; each job asks only for what it needs.
+permissions: {}
 
 # Allow only one concurrent deployment; don't cancel in-progress production deploys.
 concurrency:
@@ -23,41 +21,41 @@ defaults:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.169.0
-      HUGO_ENVIRONMENT: production
-      TZ: Europe/Athens
+    name: Build site
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read # check out the repository
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v6
-      - name: Install Hugo CLI
-        run: |
-          curl -sSfL -o "${{ runner.temp }}/hugo.deb" \
-            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
-          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
-          hugo version
+          persist-credentials: false
+      - name: Install Hugo
+        uses: $/.github/actions/setup-hugo
       - name: Build with Hugo
-        # baseURL comes from hugo.toml (https://artisanml.io/). Pages reports
-        # http:// for the custom domain, so don't pass its base_url here.
-        run: hugo --gc --minify
+        env:
+          HUGO_ENVIRONMENT: production
+        # baseURL comes from hugo.toml (https://artisanml.io/). Don't use
+        # configure-pages' base_url: Pages reports http:// for the custom domain.
+        run: hugo --gc --minify --panicOnWarning
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: ./public
 
   deploy:
+    name: Deploy to GitHub Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
     needs: build
+    permissions:
+      pages: write # publish the Pages deployment
+      id-token: write # OIDC token that deploy-pages uses to authenticate
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

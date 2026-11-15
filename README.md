@@ -3,7 +3,7 @@
 The website of ARTISAN ML.
 
 Built with:
-- [Hugo](https://gohugo.io/) v0.169.0+extended
+- [Hugo](https://gohugo.io/) v0.170.0
 - [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme (vendored in `themes/PaperMod`)
 
 Run locally with `./serve.sh`.
