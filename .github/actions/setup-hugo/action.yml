@@ -1,0 +1,29 @@
+# Installs a pinned Hugo release and checks it against a known SHA-256.
+# To upgrade: bump both values from the release's hugo_<version>_checksums.txt
+# (the line for hugo_<version>_linux-amd64.deb).
+name: Setup Hugo
+description: Install a pinned, checksum-verified Hugo release
+
+inputs:
+  version:
+    description: Hugo version (without the leading v)
+    default: "0.170.0"
+  sha256:
+    description: SHA-256 of hugo_<version>_linux-amd64.deb
+    default: "f9708cd2eee28504a0c5b488ddb8e8b49008bd7e99862bccfa76bbe50809d3ee"
+
+runs:
+  using: composite
+  steps:
+    - name: Download, verify and install Hugo
+      shell: bash
+      env:
+        HUGO_VERSION: ${{ inputs.version }}
+        HUGO_SHA256: ${{ inputs.sha256 }}
+      run: |
+        deb="${RUNNER_TEMP}/hugo.deb"
+        curl -sSfL --retry 3 -o "$deb" \
+          "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.deb"
+        echo "${HUGO_SHA256}  ${deb}" | sha256sum --check --strict
+        sudo dpkg -i "$deb"
+        hugo version

@@ -1,0 +1,15 @@
+# Weekly PRs to bump the pinned GitHub Actions (commit SHAs) in workflows.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    # Wait a week before proposing a new release, so compromised or yanked
+    # versions are likely caught before they reach this repo.
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns:
+          - "*"
